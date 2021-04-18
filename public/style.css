@@ -74,7 +74,7 @@
 
 .main__chat_window {
     flex-grow: 1;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .messages{

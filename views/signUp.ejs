@@ -18,7 +18,7 @@
 
 				$.ajax({
 					type: 'POST',
-					url: '/',
+					url: '/signUp',
 					data: $('#form1').serialize(),
 					dataType: "json",
 					success: function(response){
@@ -64,9 +64,9 @@
 			<span id="check"></span>
 		</div>
 		<div>
-			<span>Already Registered! <a href="/login">Login</a></span>
+			<span>Already Registered! <a href="/">Login</a></span>
 		</div>
-		<div id="LangTable"><a href="/login" id="aa"></a>
+		<div id="LangTable"><a href="/" id="aa"></a>
 		</div>
 	</div>
 </body>

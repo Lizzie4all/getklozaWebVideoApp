@@ -10,6 +10,7 @@
   "author": "Mustapha Ahmed Afolabi",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^5.0.0",
     "connect-mongo": "^3.0.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
@@ -21,6 +22,5 @@
     "peerjs": "^1.3.2",
     "socket.io": "^4.0.1",
     "uuid": "^8.3.2"
-
   }
 }

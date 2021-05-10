@@ -1,3 +1,22 @@
+/** Views **/ 
+.container p-3, .container{
+	text-align: center !important;
+    background-color: rgb(248, 247, 247);
+}
+p{
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.mssg{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+
+
+/** Room **/ 
 .main {
     height: 100vh;
     display: flex;

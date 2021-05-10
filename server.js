@@ -65,6 +65,7 @@ app.get('/invite', (req, res) => {
   res.redirect(`/invite/<%= roomId %>`)
 });
 
+
 //catch 404 and forward to error handler
 app.use(function (req, res, next) {
     const err = new Error('File Not Found');
@@ -79,7 +80,7 @@ app.use(function (err, req, res, next) {
   res.send(err.message);
 });
 
-/**io.on('connection', socket => {
+io.on('connection', socket => {
     socket.on('join-room', (roomId, userId) => {
         socket.join(roomId);
         socket.to(roomId).emit('user-connected', userId);
@@ -87,6 +88,6 @@ app.use(function (err, req, res, next) {
             io.to(roomId).emit('createMessage', message)
         })
     })
-})  **/
+})  
  
 server.listen(process.env.PORT||3030, ()=> console.log(`Server running successfully`))

@@ -13,6 +13,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
 
     <script>
         const ROOM_ID = "<%= roomId %>";
@@ -33,7 +34,7 @@
 </head>
 <body>
  <div class="container-fluid"> 
-   <div class="container">
+   <div class="container" id="main">
       <div class="main__left">
          <div class="main__videos">
             <div id="video-grid">

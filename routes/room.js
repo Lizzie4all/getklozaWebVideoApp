@@ -16,10 +16,9 @@ router.get('/:room', (req, res) => {
       res.render('room', { roomId: req.query.room })
     }else{
       res.render('room', { roomId: req.params.room })
-    }
+    } 
 
-  })
-
+})
 
   
 module.exports = router;

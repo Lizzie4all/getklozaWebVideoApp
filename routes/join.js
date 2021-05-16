@@ -18,7 +18,8 @@ router.get('/', (req, res) => {
 
 router.post('/meet', (req, res) => {
     console.log(req.body.meetingId)
-    res.redirect('/room?room='+req.body.meetingId);
+    //res.redirect('/room?room='+req.body.meetingId);
+    res.redirect(`/room/${req.body.meetingId}`)
 });
 
 

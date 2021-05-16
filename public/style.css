@@ -17,8 +17,8 @@ p{
 
 
 /** Room **/ 
-.main {
-    min-height: 100%;
+.container {
+    min-height: 100vh;
     display: flex;
 }
 

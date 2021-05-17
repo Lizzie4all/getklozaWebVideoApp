@@ -9,7 +9,7 @@ const peers = {}
 var peer = new Peer(undefined, {
     path: '/peerjs', 
     host: '/',
-    port: '443'
+    port: '3030'
 });
  
 let myVideoStream
@@ -136,3 +136,6 @@ const scrollToBottom = () => {
     document.querySelector('.main__video_button').innerHTML = html;
   }
   
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+  });

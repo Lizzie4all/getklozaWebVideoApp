@@ -55,8 +55,9 @@
             <div class="main__controls__block">
                <div class="main__controls__button"> 
                   <i class="fas fa-external-link-alt"></i>
-                  <a href="/invite/<%= roomId %>" target="_blank"> 
-                  <span>Send Invitation</span> </a>
+                  <a class="one" href="#" title="Meeting ID" data-toggle="popover" data-placement="top" 
+                     data-content="<%= roomId %>">Meeting ID</a>
+               
                </div>
                <div class="main__controls__button">
                   <i class="fas fa-user-friends"></i>
@@ -69,7 +70,8 @@
             </div>
             <div class="main__controls__block">
                <div class="main__controls__button">
-                  <span class="leave_meeting">Leave Meeting</span>
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>Leave Meeting</span>
                </div>
             </div>
          </div>

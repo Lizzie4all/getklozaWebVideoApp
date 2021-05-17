@@ -17,7 +17,6 @@ const login = require('./routes/login');
 const signUp = require('./routes/signUp');
 const room = require('./routes/room');
 const join = require('./routes/join');
-const invite = require('./routes/invite');
 const forgetpass = require('./routes/forgetpass');
 
 mongoose.connect('mongodb+srv://mustapha-ahmed:ADEbayor95@cluster0.23w5d.mongodb.net/getKloza?retryWrites=true&w=majority', {
@@ -55,16 +54,11 @@ app.use('/', login);
 app.use('/signUp', signUp);
 app.use('/room', room);
 app.use('/join', join);
-app.use('/invite', invite);
 app.use('/forgetpass', forgetpass);
 
 app.get('/room', (req, res) => {
   res.redirect(`/room/${uuidv4()}`)
 });
-app.get('/invite', (req, res) => {
-  res.redirect(`/invite/<%= roomId %>`)
-});
-
 
 //catch 404 and forward to error handler
 app.use(function (req, res, next) {

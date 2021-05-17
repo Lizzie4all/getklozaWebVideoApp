@@ -121,3 +121,11 @@ p{
     color: #CC3B33;
 }
 
+a.one:link, a.one:visited {
+    color: white;
+    text-decoration:none;
+  }
+  
+  a.one:link:active, a.one:visited:active {
+    color: white;
+  }

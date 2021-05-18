@@ -94,6 +94,7 @@ p{
 .main__chat_window {
     flex-grow: 1;
     overflow-y: auto;
+    text-align: left;
 }
 
 .messages{

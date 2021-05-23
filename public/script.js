@@ -1,7 +1,10 @@
 
 const socket = io('/');
 const videoGrid = document.getElementById('video-grid');
-const myVideo = document.createElement('video');
+const myVideo = document.createElement('video')
+myVideo.classList.add("col-lg-4")
+myVideo.classList.add("col-md-6")
+myVideo.classList.add("col-sm-12")
 myVideo.muted = true;
 //just added....
 const peers = {}
@@ -23,6 +26,9 @@ navigator.mediaDevices.getUserMedia({
     peer.on('call', call => {
         call.answer(stream)
         const video = document.createElement('video')
+        video.classList.add("col-lg-4")
+        video.classList.add("col-md-6")
+        video.classList.add("col-sm-12")
         call.on('stream', userVideoStream => {
             addVideoStream(video, userVideoStream)
         })
@@ -46,6 +52,9 @@ peer.on('open', id => {
 const connectToNewUser = (userId, stream) => {
     const call = peer.call(userId, stream)
     const video = document.createElement('video')
+    video.classList.add("col-lg-4")
+    video.classList.add("col-md-6")
+    video.classList.add("col-sm-12")
     call.on('stream', userVideoStream => {
         addVideoStream(video, userVideoStream)
     })
@@ -109,7 +118,7 @@ const scrollToBottom = () => {
       <i class="fas fa-microphone"></i>
       <span>Mute</span>
     `
-    document.querySelector('.main__mute_button').innerHTML = html;
+    document.querySelector('#main__mute_button').innerHTML = html;
   }
   
   const setUnmuteButton = () => {
@@ -117,7 +126,7 @@ const scrollToBottom = () => {
       <i class="unmute fas fa-microphone-slash"></i>
       <span>Unmute</span>
     `
-    document.querySelector('.main__mute_button').innerHTML = html;
+    document.querySelector('#main__mute_button').innerHTML = html;
   }
   
   const setStopVideo = () => {
@@ -125,7 +134,7 @@ const scrollToBottom = () => {
       <i class="fas fa-video"></i>
       <span>Stop Video</span>
     `
-    document.querySelector('.main__video_button').innerHTML = html;
+    document.querySelector('#main__video_button').innerHTML = html;
   }
   
   const setPlayVideo = () => {
@@ -133,7 +142,7 @@ const scrollToBottom = () => {
     <i class="stop fas fa-video-slash"></i>
       <span>Play Video</span>
     `
-    document.querySelector('.main__video_button').innerHTML = html;
+    document.querySelector('#main__video_button').innerHTML = html;
   }
   
   $(document).ready(function(){

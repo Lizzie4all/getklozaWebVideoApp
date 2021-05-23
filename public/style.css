@@ -1,7 +1,7 @@
 /** Views **/ 
 .container {
 	text-align: center !important;
-    background-color: rgb(194, 211, 229);
+    background-color: rgb(243, 243, 226);
     min-height: 100vh;
 }
 
@@ -26,14 +26,14 @@ p{
 #left {
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 #right{
     background-color: #242324;
     border-left: 1px solid #3D3D42;
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 #main__controls {

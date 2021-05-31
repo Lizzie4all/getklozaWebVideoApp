@@ -25,22 +25,23 @@ p{
 }
 #left {
     min-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 #right{
     background-color: #242324;
     border-left: 1px solid #3D3D42;
     min-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
+}
+.row{
+    position: relative;
 }
 
 #main__controls {
     background-color: #1C1E20;
     color: #D2D2D2;
     padding: 5px;
-    min-width: 80px;
+    position: absolute;
+    bottom: 0px;
+    width: 97%;
 }   
 
 #main__mute_button, #main__video_button, #leave_control__button, #control__button {
@@ -64,9 +65,6 @@ p{
 
 .main__chat_window {
     text-align: left;
-    flex-grow: 1;
-    overflow-y: auto;
-    min-height: 85vh;
 }
 
 .messages{
@@ -76,15 +74,18 @@ p{
 
 .main__message_container {
     padding: 22px 12px;
-    background-color: #1C1E20;
+    background-color: transparent;
     color: #D2D2D2;
+    position: absolute;
+    bottom: 0px;
+    width: 95%;
 }
 
 .main__message_container input {
     background-color: transparent;
     border: none;
     color: white;
-    
+    width: 100%;
 }
 
 #leave_control__button {

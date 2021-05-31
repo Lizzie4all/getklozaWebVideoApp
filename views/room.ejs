@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meetings GetKloza</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -20,11 +19,8 @@
  <style>
    #video-grid{
          justify-content: center;
-         min-height: 90vh;
       }
       video{
-         height: 300px;
-         width: 400px;
          object-fit: cover;
          padding: 8px;
       }
@@ -33,7 +29,7 @@
 <body>
    <div class="container-fluid">
       <div class="row">
-         <div class="col-md-8" id="left">
+         <div class="col-md-8 col-sm-12" id="left">
          
             <div class="row" id="video-grid">
          
@@ -49,9 +45,11 @@
                   <span>Stop Video</span>
                </div>
                <div class="col" id="control__button"> 
-                  <i class="fas fa-external-link-alt"></i> <br>
+                  
                   <a class="one" href="#" title="Meeting ID" data-toggle="popover" data-placement="top" 
-                     data-content="<%= roomId %>">Meeting ID</a>
+                     data-content="<%= roomId %>"> <i class="fas fa-external-link-alt"></i> <br> 
+                     <span>Meeting ID</span> 
+                  </a>
                </div>
                <div class="col" id="control__button">
                   <i class="fas fa-user-friends"></i> <br>
@@ -69,7 +67,7 @@
             </div>
          </div>
 
-         <div class="col-md-4" id="right">
+         <div class="col-md-4 col-sm-12" id="right">
             <div class="main__header">
                <h6>Chat <i class="fas fa-comment-alt"></i> </h6>
             </div>

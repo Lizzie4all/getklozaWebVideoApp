@@ -16,21 +16,17 @@
 	<%- include ("./includes/nav") %>
 
 	<div class="container" style="margin-top:30px">
-		<div>
-			<h1><span class="badge badge-secondary">getKloza <i class="fas fa-video"></i></span></h1>
-		</div>
-		<br>
 		<div class="row" style="padding-top: 5px;">
 		  <div class="col-md-7 col-sm-12">
 			<div>
-				<p>Profile Detail</p>
+				<h4>User Profile</h4>
 			</div>
 			<div>
 				<center>
-					<table class="table table-striped text-center">
-						<tr><td>Name </td><td id="username"><%= name %></td></tr>
-						<tr><td>Email </td><td><%= email %></td></tr>
-						<tr><td>Phone Number </td><td><%= phone %></td></tr>
+					<table class="table table-striped text-justify">
+						<tr><th>Name </th><td id="username"><%= name %></td></tr>
+						<tr><th>Email </th><td><%= email %></td></tr>
+						<tr><th>Phone Number </th><td><%= phone %></td></tr>
 					</table>
 				</center>
 			</div>

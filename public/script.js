@@ -145,6 +145,12 @@ const scrollToBottom = () => {
     document.querySelector('#main__video_button').innerHTML = html;
   }
   
+  //Meeting popUp
   $(document).ready(function(){
     $('[data-toggle="popover"]').popover();   
   });
+
+  //Leave Meeting
+  function goBack() {
+    window.history.back();
+  }

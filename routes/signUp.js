@@ -12,7 +12,7 @@ router.post('/', function(req, res, next) {
 	const personInfo = req.body;
 
 
-	if(!personInfo.email || !personInfo.username || !personInfo.password || !personInfo.passwordConf){
+	if(!personInfo.email || !personInfo.username || !personInfo.phone || !personInfo.password || !personInfo.passwordConf){
 		res.send();
 	} else {
 		if (personInfo.password == personInfo.passwordConf) {
@@ -33,6 +33,7 @@ router.post('/', function(req, res, next) {
 							unique_id:c,
 							email:personInfo.email,
 							username: personInfo.username,
+							phone: personInfo.phone,
 							password: personInfo.password,
 							passwordConf: personInfo.passwordConf
 						});

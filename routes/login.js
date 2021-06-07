@@ -35,7 +35,7 @@ router.get('/profile', function (req, res, next) {
 			res.redirect('/signUp');
 		}else{
 			//console.log("found");
-			return res.render('welcome.ejs', {"name":data.username,"email":data.email});
+			return res.render('welcome.ejs', {"name":data.username,"email":data.email,"phone":data.phone});
 		}
 	});
 });

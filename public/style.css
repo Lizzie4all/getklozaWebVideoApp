@@ -54,11 +54,6 @@ h3{
     cursor: pointer;
 }
 
-#main__mute_button, #main__video_button, #leave_control__button, #control__button:hover {
-    background-color: #343434;
-    border-radius: 5px;
-}
-
 #main__mute_button, #main__video_button, #leave_control__button, #control__button:i {
     font-size: 24px;
 }

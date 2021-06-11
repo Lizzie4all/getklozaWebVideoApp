@@ -150,7 +150,8 @@ const scrollToBottom = () => {
     $('[data-toggle="popover"]').popover();   
   });
 
-  //Leave Meeting
+  //Back Button Function
   function goBack() {
     window.history.back();
   }
+  

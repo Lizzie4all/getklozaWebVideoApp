@@ -1,4 +1,6 @@
-
+body{
+    min-height: 100vh;
+}
 /** Views **/ 
 .container {
 	text-align: center !important;
@@ -26,14 +28,13 @@ h3{
 .container-fluid{
 	text-align: center !important;
     background-color: black;
-    min-height: 100vh;
     
 }
 #left {
     min-height: 100vh;
 }
 #right{
-    background-color: #242324;
+    background-color: #242f41;
     border-left: 1px solid #3D3D42;
     min-height: 100vh;
 }
@@ -42,8 +43,8 @@ h3{
 }
 
 #main__controls {
-    background-color: #1C1E20;
-    color: #D2D2D2;
+    background-color: #242f41;
+    color: white;
     padding: 5px;
     position: absolute;
     bottom: 0px;

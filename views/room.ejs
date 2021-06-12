@@ -19,11 +19,16 @@
  <style>
    #video-grid{
          justify-content: center;
-         padding-top: 5px;
+         align-items: center;
       }
       video{
+         height: auto;
+         width:100%;
          object-fit: cover;
-
+         margin-top: 20px;
+         transform: rotateY(180deg);
+         -webkit-transform: rotateY(180deg);
+         -moz-transform: rotateY(180deg);
       }
  </style>
 </head>
@@ -46,9 +51,9 @@
                   <span>Stop Video</span>
                </div>
                <div class="col" id="control__button"> 
-                  <a class="one" href="#" title="Meeting ID" data-toggle="popover" data-placement="top" 
-                     data-content="<%= roomId %>"> <i class="fas fa-external-link-alt"></i> <br> 
-                     <span>Meeting ID</span> 
+                  <a class="one" href="#" title="Copy Meeting ID" data-toggle="popover" data-placement="top" 
+                     data-content="<%= roomId %>"> <i class="fas fa-user-plus"></i> <br> 
+                     <span>Invite</span> 
                   </a>
                </div>
                <div class="col" id="control__button">

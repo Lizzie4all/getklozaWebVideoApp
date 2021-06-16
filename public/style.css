@@ -12,12 +12,7 @@ p{
 	margin-top: 20px;
 	font-size: 30px;
 }
-h3{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    text-align: center;
-}
+
 .mssg{
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -48,14 +43,14 @@ h3{
     padding: 5px;
     position: absolute;
     bottom: 0px;
-    width: 97%;
+    width: 100%;
 }   
 
-#main__mute_button, #main__video_button, #leave_control__button, #control__button {
+#main__mute_button, #main__video_button, #leave_control__button, #chat_control__button, #control__button {
     cursor: pointer;
 }
 
-#main__mute_button, #main__video_button, #leave_control__button, #control__button:i {
+#main__mute_button, #main__video_button, #leave_control__button, #chat_control__button, #control__button:i {
     font-size: 24px;
 }
 

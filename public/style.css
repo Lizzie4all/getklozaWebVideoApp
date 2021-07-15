@@ -22,7 +22,7 @@ p{
 /** Room **/
 .container-fluid{
 	text-align: center !important;
-    background-color: black;
+    background-color: rgb(236, 227, 227);
     
 }
 #left {

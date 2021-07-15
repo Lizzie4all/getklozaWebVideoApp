@@ -145,7 +145,7 @@ const scrollToBottom = () => {
     document.querySelector('#main__video_button').innerHTML = html;
   }
   
-  //Meeting popUp
+  //Meeting ID popUp
   $(document).ready(function(){
     $('[data-toggle="popover"]').popover();   
   });
@@ -155,3 +155,12 @@ const scrollToBottom = () => {
     window.history.back();
   }
   
+  const targetDiv = document.getElementById("right");
+  const showHide = () => {
+    if (targetDiv.style.display !== "none") {
+      targetDiv.style.display= "none";
+    } else {
+      targetDiv.style.display = "block";
+    }
+  };
+
